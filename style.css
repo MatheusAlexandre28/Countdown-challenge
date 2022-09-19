@@ -71,3 +71,7 @@ h1 {
   border: none;
   border-radius: .5rem;
 }
+
+.button:hover {
+  background: #4D4C59;
+}
