@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
-:root {
-  --black: #4D4C59;
-  --purple: #6C63FF;
-	--light-grey: #C8C8C8;
-  --text-color: #9C9AB6;
-}
-
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -43,7 +36,7 @@ h1 {
 
 .aside {
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 .rocketimg {
@@ -53,7 +46,7 @@ h1 {
 
 .P-bottom-countdown {
   color: #9C9AB6;
-  margin: 200px 0px 0px 130px;
+  margin: 0px 0px 0px 130px;
 }
 
 .container {
@@ -74,4 +67,14 @@ h1 {
 
 .button:hover {
   background: #4D4C59;
+}
+
+.timer {
+  display: flex;
+  justify-content: flex-end;
+  width: 93%;
+  margin: 10px 0px 30px 50px;
+  height: 30%;
+  font-size: 6rem;
+  color: #4D4C59;
 }
