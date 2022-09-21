@@ -49,10 +49,25 @@ h1 {
   margin: 0px 0px 0px 130px;
 }
 
-.container {
+.countdown-container{
   display: flex;
-  gap: 7rem;
-  margin: 0px 0px 0px 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text {
+  font-weight: bold;
+  color: #4D4C59;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 1rem 2rem;
+}
+
+.countdown-el {
+  text-align: center;
+}
+
+.countdown-el span {
   color: #C8C8C8;
 }
 

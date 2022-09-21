@@ -1,29 +1,32 @@
-function startTimer(duration, display){
+const daysEl = document.getElementById("days");
+const hoursEl = document.getElementById("hours");
+const minsEl = document.getElementById("mins");
+const secondsEl = document.getElementById("seconds");
 
-  var timer = duration, hours, minutes, seconds;
+const newYears = "1 jan 2023";
 
-  setInterval(function(){
-    hours = parseInt(timer / 60, 10)
-    minutes = parseInt(timer / 60, 10);
-    seconds = parseInt(timer % 60, 10);
+function countdown(){
 
-    hours = hours < 10 ? "0" + hours : hours;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
+  const newYearsDate = new Date(newYears);
+  const currentDate = new Date();
 
-    display.textContent = hours + "  :  " + minutes + "  :  " + seconds;
+  const totalSeconds = (newYearsDate - currentDate) / 1000;
 
-    if(--timer < 0){
-      timer = duration;
-    }
+  const days = Math.floor(totalSeconds / 3600 / 24);
+  const hours = Math.floor(totalSeconds / 3600) % 24;
+  const mins = Math.floor(totalSeconds / 60) % 60;
+  const seconds = Math.floor(totalSeconds) % 60;
 
-  }, 1000);
+  daysEl.innerHTML = days;
+  hoursEl.innerHTML = formatTime(hours);
+  minsEl.innerHTML = formatTime(mins);
+  secondsEl.innerHTML = formatTime(seconds);
 }
 
-window.onload = function() {
-
-  var duration = 60 * 60; // Conversão para segundos
-  var display = document.querySelector("#timer"); // elemento que exibe o timer
-
-  startTimer(duration, display); // inicia a função
+function formatTime(time){
+  return time < 10 ? `0${time}` : time;
 }
+
+countdown();
+
+setInterval(countdown, 1000);
