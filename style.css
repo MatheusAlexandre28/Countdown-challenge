@@ -14,7 +14,7 @@
 
 .img-bottom {
   max-height: max-content;
-  width: 100%;
+  max-width: 100%;
 }
 
 .container-img {
