@@ -12,21 +12,6 @@
   width: 100%;
 }
 
-.img-bottom {
-  max-height: max-content;
-  max-width: 100%;
-}
-
-.container-img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
 h1 {
   font-weight: 900;
   color: #6C63FF;
@@ -93,4 +78,11 @@ h1 {
   height: 30%;
   font-size: 5rem;
   color: #4D4C59;
+}
+
+.img-bottom-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid red;
 }
