@@ -80,9 +80,9 @@ h1 {
   color: #4D4C59;
 }
 
-.img-bottom-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  border: 1px solid red;
+.img-bottom {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
 }
