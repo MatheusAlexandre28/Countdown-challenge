@@ -40,3 +40,4 @@ countdown();
 
 // SetInterval seta um intervalo de tempo de atualização do script
 setInterval(countdown, 1000);
+
