@@ -64,10 +64,9 @@ h1 {
   background: #6C63FF;
   border: none;
   border-radius: .5rem;
+  cursor: pointer;
 }
 
-.button:hover {
-}
 
 .timer {
   display: flex;
