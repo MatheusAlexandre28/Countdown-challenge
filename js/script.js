@@ -43,3 +43,18 @@ setInterval(countdown, 1000);
 
 // Modal
 
+const openModalButton = document.querySelector("#open-modal");
+const closeModalButton = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+
+// Para abrir e fechar a opacity do css
+const toggleModal = () => {
+  [modal, fade].forEach((el) => el.classList.toggle("hide"));
+};
+
+// forEach (onde para cada item do array ele executa uma ação, funciona como for soq de uma forma melhor)
+[openModalButton, closeModalButton, fade].forEach((el) => {
+  el.addEventListener("click", () => toggleModal());
+})
+
