@@ -156,5 +156,39 @@ button:hover {
   background-color: rgb(255, 74, 74);
 }
 
+.button-inscrever {
+  color: #C8C8C8;
+  background: #6C63FF;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.4s;
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: .8rem;
+  color: #9C9AB6;
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid;
+  opacity: 0.8;
+}
+
+form input:hover {
+  border: none;
+  border-bottom: 1px solid;
+  opacity: 1;
+  
+}
+
+
+
+
+
 
 
