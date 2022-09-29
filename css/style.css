@@ -20,7 +20,7 @@ h1 {
   font-size: 2rem;
 }
 
-.aside {
+.main {
   display: flex;
   gap: 50px;
 }
@@ -84,9 +84,12 @@ button:hover {
   color: #4D4C59;
 }
 
+
 .img-bottom {
+  left: 0;
   bottom: 0;
   width: 100%;
+  object-fit: cover;
 }
 
 
@@ -183,10 +186,25 @@ form input:hover {
   border: none;
   border-bottom: 1px solid;
   opacity: 1;
-  
+
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
 
+.item {
+  flex: 1;
+}
+
+footer {
+  max-height: 300px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
 
 
 

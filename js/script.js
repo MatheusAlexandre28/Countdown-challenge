@@ -5,7 +5,7 @@ const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
 // Define a data que eu quero q ele conte a partir de hoje
-const newYears = "1 jan 2023"; 
+const newYears = "30 oct 2022"; 
 
 
 function countdown(){
